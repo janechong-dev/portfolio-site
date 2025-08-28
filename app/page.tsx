@@ -13,8 +13,8 @@ const experiences = [
     role: 'CS @ UPenn, Econ @ UQ (Australia 🦘)',
   },
 ]
-const fact = 'My official name is Ching Chong (yes, really). Coincidentally my hobbies are ping pong and sing song 🎤🏓.'
-const seeking = 'Remote full time roles, AI consulting opportunities'
+const fact = 'My birth name is Ching Chong (yes, really). Coincidentally I like to sing song and is good at ping pong 🎤🏓.'
+const seeking = 'Remote SWE roles, AI projects collaboration'
 
 export default function Page() {
   return (

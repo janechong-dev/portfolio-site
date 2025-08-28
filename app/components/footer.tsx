@@ -1,6 +1,6 @@
 // CONST
-const title = ['linkedin', 'github', 'youtube']
-const links = ['https://www.linkedin.com/in/janechongdev', 'https://github.com/janechong-dev', 'youtube']
+const title = ['linkedin', 'github']
+const links = ['https://www.linkedin.com/in/janechongdev', 'https://github.com/janechong-dev']
 
 function ArrowIcon() {
   return (
