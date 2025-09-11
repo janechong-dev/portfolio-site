@@ -11,10 +11,8 @@ const experiences = [
   {
     date: 'Education',
     role: 'CS @ UPenn, Econ @ UQ (Australia 🦘)',
-  },
+  }
 ]
-const fact = 'My birth name is Ching Chong (yes, really). Coincidentally I like to sing song and is good at ping pong 🎤🏓.'
-const seeking = 'Remote SWE roles, AI projects collaboration'
 
 export default function Page() {
   return (
@@ -38,16 +36,6 @@ export default function Page() {
             </p>
           </div>
         ))}
-      </div>
-
-      <div className="my-8">
-        <h2 className="mb-2 font-semibold">Fun Fact</h2>
-        {fact}
-      </div>
-
-      <div className="my-8">
-        <h2 className="mb-2 font-semibold">Open To</h2>
-        {seeking}
       </div>
     </section>
   )
