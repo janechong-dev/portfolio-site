@@ -1,0 +1,41 @@
+---
+title: 'My Claude + Cursor workflow'
+publishedAt: '2024-12-15'
+summary: 'My approach to building software with AI assistance - lessons from real projects'
+---
+
+### Workflow
+
+- Start with requirements analysis
+    - using Claude to debate about design and approach
+    - ~25% of project time, human led
+- Break into small tasks and use TDD loop
+    - plan → write tests → pass tests 
+    - ~50% of project time, AI led
+- Finish with functional testing to ensure requirements are met
+    - ~25% of project time, human led
+
+
+### Tool of Choice & Techniques
+
+- Cursor IDE: for inline edits
+- Claude Code: for agentic coding 
+    - Claude.md: add requirements, decisions, style guide
+    - Plan mode: with "think hard" for more complex decisions
+    - Expert agents: for code review and design critique
+
+## Challenges & Solutions
+
+- To avoid going over context window
+    - break into self contained tasks, /clear Claude and regurgitate task req
+- To avoid untrackable edits
+    - disallow edit/bash permissions, review before accepting, use git
+- To avoid over engineering
+    - use TDD and "implement minimum needed to pass tests"
+
+
+## My philosophy
+
+- Must understand requirements clearly before AI can help
+- Measure twice, cut once - spend more time on planning phase
+- Merely a pair programmer, need to know best practices to be able to guide
