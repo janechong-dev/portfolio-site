@@ -72,12 +72,12 @@ export default function Project({ params }: { params: { slug: string } }) {
       <h1 className="title font-semibold text-2xl tracking-tighter">{decoratedTitle}</h1>
       <div className="mt-4 space-y-4">
         {project.image ? (
-          <img src={project.image} alt={project.title} className="w-full rounded-lg border border-neutral-200 dark:border-neutral-800" />
+          <img src={project.image} alt={project.title} className="w-full rounded-lg border border-neutral-200" />
         ) : null}
-        <p className="text-neutral-700 dark:text-neutral-300">{project.summary}</p>
+        <p className="text-neutral-700">{project.summary}</p>
         <div>
           <h2 className="font-semibold tracking-tight mb-2">What I Built</h2>
-          <ul className="list-disc pl-6 text-neutral-700 dark:text-neutral-300">
+          <ul className="list-disc pl-6 text-neutral-700">
             {project.whatBuilt.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -85,11 +85,11 @@ export default function Project({ params }: { params: { slug: string } }) {
         </div>
         <div>
           <h2 className="font-semibold tracking-tight mb-2">Impact</h2>
-          <p className="text-neutral-700 dark:text-neutral-300">{project.impact}</p>
+          <p className="text-neutral-700">{project.impact}</p>
         </div>
         <div>
           <h2 className="font-semibold tracking-tight mb-2">What I&apos;d Improve</h2>
-          <p className="text-neutral-700 dark:text-neutral-300">{project.next}</p>
+          <p className="text-neutral-700">{project.next}</p>
         </div>
       </div>
     </section>

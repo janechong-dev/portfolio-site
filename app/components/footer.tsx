@@ -20,12 +20,12 @@ function ArrowIcon() {
 export default function Footer() {
   return (
     <footer className="mb-16">
-      <div className="mt-8 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-neutral-900/40 px-3 py-2">
-        <p className="text-sm text-neutral-600 dark:text-neutral-300">
+      <div className="mt-8 rounded-lg border border-neutral-200 bg-neutral-50/70 px-3 py-2">
+        <p className="text-sm text-neutral-600">
           Hiring for remote roles? Contact me:{' '}
           <ArrowIcon />
           <a
-            className="underline underline-offset-2 transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="underline underline-offset-2 transition-all hover:text-neutral-800"
             rel="noopener noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/janechongdev"
@@ -34,7 +34,7 @@ export default function Footer() {
           </a>
           <ArrowIcon />
           <a
-            className="underline underline-offset-2 transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="underline underline-offset-2 transition-all hover:text-neutral-800"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/janechong-dev"
@@ -43,7 +43,7 @@ export default function Footer() {
           </a>
           <ArrowIcon />
           <a
-            className="underline underline-offset-2 transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="underline underline-offset-2 transition-all hover:text-neutral-800"
             href="mailto:janechong.dev@gmail.com"
           >
             email

@@ -35,8 +35,8 @@ export default function Projects() {
           onClick={() => setView('cards')}
           className={`text-sm rounded-full border px-3 py-1 ${
             view === 'cards'
-              ? 'border-neutral-900 bg-neutral-900 text-white dark:border-neutral-100 dark:bg-neutral-100 dark:text-neutral-900'
-              : 'border-neutral-300 dark:border-neutral-700'
+              ? 'border-neutral-900 bg-neutral-900 text-white'
+              : 'border-neutral-300'
           }`}
         >
           Cards
@@ -46,8 +46,8 @@ export default function Projects() {
           onClick={() => setView('list')}
           className={`text-sm rounded-full border px-3 py-1 ${
             view === 'list'
-              ? 'border-neutral-900 bg-neutral-900 text-white dark:border-neutral-100 dark:bg-neutral-100 dark:text-neutral-900'
-              : 'border-neutral-300 dark:border-neutral-700'
+              ? 'border-neutral-900 bg-neutral-900 text-white'
+              : 'border-neutral-300'
           }`}
         >
           List
@@ -61,14 +61,14 @@ export default function Projects() {
             const isLive = project?.status === 'live'
 
             const row = isLive && project ? (
-              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
+              <p className="text-neutral-900 tracking-tight">
                 {renderStylizedTitle(project.title)}{' '}
-                <span className="text-sm text-neutral-600 dark:text-neutral-400">
+                <span className="text-sm text-neutral-600">
                   - {project.blurb} {getEmojiSuffix(project.highlights)}
                 </span>
               </p>
             ) : (
-              <p className="text-neutral-600 dark:text-neutral-400 tracking-tight">{letter}</p>
+              <p className="text-neutral-600 tracking-tight">{letter}</p>
             )
 
             if (isLive && project) {
@@ -107,19 +107,19 @@ export default function Projects() {
                     className="w-full aspect-[16/9] object-cover rounded-sm mb-1"
                   />
                 ) : (
-                  <div className="w-full aspect-[16/9] rounded-sm mb-1 bg-neutral-300 dark:bg-neutral-700" />
+                  <div className="w-full aspect-[16/9] rounded-sm mb-1 bg-neutral-300" />
                 )}
                 {isLive && project ? (
                   <div className="leading-tight">
-                    <p className="text-neutral-900 dark:text-neutral-100">
+                    <p className="text-neutral-900">
                       {renderStylizedTitle(project.title)}
                     </p>
-                    <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-0.5">
+                    <p className="text-sm text-neutral-600 mt-0.5">
                       {project.blurb} {getEmojiSuffix(project.highlights)}
                     </p>
                   </div>
                 ) : (
-                  <p className="tracking-tight text-neutral-500 dark:text-neutral-400">
+                  <p className="tracking-tight text-neutral-500">
                     {letter}
                   </p>
                 )}
@@ -134,7 +134,7 @@ export default function Projects() {
                     href={href}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-md border border-neutral-200 dark:border-neutral-800 p-1 hover:shadow-sm transition-all"
+                    className="rounded-md border border-neutral-200 p-1 hover:shadow-sm transition-all"
                   >
                     {cardBody}
                   </a>
@@ -145,7 +145,7 @@ export default function Projects() {
                 <Link
                   key={letter}
                   href={href}
-                  className="rounded-md border border-neutral-200 dark:border-neutral-800 p-1 hover:shadow-sm transition-all"
+                  className="rounded-md border border-neutral-200 p-1 hover:shadow-sm transition-all"
                 >
                   {cardBody}
                 </Link>
@@ -155,7 +155,7 @@ export default function Projects() {
             return (
               <div
                 key={letter}
-                className="rounded-md border border-neutral-200 dark:border-neutral-800 p-1"
+                className="rounded-md border border-neutral-200 p-1"
               >
                 {cardBody}
               </div>

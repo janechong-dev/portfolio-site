@@ -27,18 +27,18 @@ export default function Page() {
         />
         <div>
           <h1 className="text-2xl font-semibold tracking-tighter">Jane Chong</h1>
-          <p className="text-neutral-700 dark:text-neutral-300 mt-1">
+          <p className="text-neutral-700 mt-1">
             Currently a SDE @ Amazon
           </p>
         </div>
       </div>
 
-      <div className="mb-8 space-y-1 text-neutral-700 dark:text-neutral-300">
+      <div className="mb-8 space-y-1 text-neutral-700">
         <p>
           Technical, yet business and design savvy{' '}
           <Link
             href="/projects"
-            className="font-semibold text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white"
+            className="font-semibold text-neutral-600 hover:text-neutral-900"
           >
             (<span>↗ </span>
             <span className="underline underline-offset-2">projects</span>)
@@ -48,7 +48,7 @@ export default function Page() {
           {'AI-native and curious '}
           <Link
             href="/blog"
-            className="font-semibold text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white"
+            className="font-semibold text-neutral-600 hover:text-neutral-900"
           >
             (<span>↗ </span>
             <span className="underline underline-offset-2">blog</span>)
@@ -57,12 +57,12 @@ export default function Page() {
       </div>
 
       <div className="my-8">
-        <h2 className="mb-2 text-sm text-neutral-600 dark:text-neutral-400">Experience</h2>
+        <h2 className="mb-2 text-sm text-neutral-600">Experience</h2>
         <div className="flex flex-wrap items-center gap-4 mb-2">
           {experienceLogos.map((logo) => (
             <div
               key={logo.alt}
-              className="h-10 px-2 rounded border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex items-center"
+              className="h-10 px-2 rounded border border-neutral-200 bg-white flex items-center"
             >
               <Image
                 src={logo.src}
@@ -74,12 +74,12 @@ export default function Page() {
             </div>
           ))}
         </div>
-        <h2 className="mb-2 mt-6 text-sm text-neutral-600 dark:text-neutral-400">Education</h2>
+        <h2 className="mb-2 mt-6 text-sm text-neutral-600">Education</h2>
         <div className="flex flex-wrap items-center gap-4 mb-2">
           {educationLogos.map((logo) => (
             <div
               key={logo.alt}
-              className="h-10 px-2 rounded border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 flex items-center"
+              className="h-10 px-2 rounded border border-neutral-200 bg-white flex items-center"
             >
               <Image
                 src={logo.src}
