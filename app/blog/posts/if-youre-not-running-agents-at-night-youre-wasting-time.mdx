@@ -1,0 +1,37 @@
+---
+title: 'If you are not running agents at night, are you wasting time?'
+publishedAt: '2026-03-01'
+summary: 'A more balanced take on when overnight agent runs help and when they just create noise.'
+---
+
+Hot take: not always.
+
+I do not think everyone should run agents overnight by default.
+
+For small tasks, it can be wasteful:
+
+- burns tokens
+- creates noisy diffs
+- explores wrong rabbit holes
+- adds review overhead for little value
+
+Where night runs actually help is long-cycle work:
+
+- long refactors
+- broad test generation
+- dependency cleanup
+- docs and migration drafts
+
+This only works when the task has enough complexity to benefit from multiple long tries while you are offline.
+
+In the morning, I do a strict review pass:
+
+- keep what is useful
+- discard noisy changes
+- lock decisions that still need human judgment
+
+My rule:
+Use overnight agents for complex, high-latency tasks.
+Skip them for straightforward work.
+
+Agents are leverage, not a checkbox.

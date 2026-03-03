@@ -1,0 +1,29 @@
+---
+title: 'I code via Slack now'
+publishedAt: '2026-02-01'
+summary: 'How I set up a Slack app + remote desktop workflow to run Claude and ship from chat.'
+---
+
+I barely open my local IDE for quick tasks now.
+I code via Slack.
+
+Setup is simple:
+
+- Slack app receives my prompts
+- it forwards commands to a remote desktop/dev box
+- Claude runs there with repo access and executes the task
+- results come back to Slack with diffs, logs, and next actions
+
+Why this works for me:
+
+- I can trigger work from anywhere
+- async updates are clean and searchable
+- context stays in one thread instead of scattered tabs
+
+The key is guardrails:
+
+- scoped repo permissions
+- explicit command allowlists
+- human review before merge
+
+It feels weird at first, but once the loop is stable, shipping gets much faster.
