@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earn It</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="points-header">
+      <h1>Earn It</h1>
+      <div class="totals-row">
+        <div class="total-card earned">
+          <span class="label">Points Earned</span>
+          <strong id="points-earned">0</strong>
+        </div>
+        <div class="formula-symbol">-</div>
+        <div class="total-card spent">
+          <span class="label">Points Spent</span>
+          <strong id="points-spent">0</strong>
+        </div>
+        <div class="formula-symbol">=</div>
+        <div class="total-card remaining">
+          <span class="label">Points Remaining</span>
+          <strong id="points-remaining">0</strong>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout-grid">
+      <section class="panel entries-panel">
+        <h2>Add Entry</h2>
+        <form id="entry-form" class="entry-form">
+          <label class="inline-field">
+            Activity
+            <input id="activity" name="activity" type="text" placeholder="Read 30 minutes" required>
+          </label>
+          <label class="inline-field">
+            Points
+            <input id="points" name="points" type="number" min="1" step="1" placeholder="10" required>
+          </label>
+          <button type="submit">+</button>
+        </form>
+
+        <div class="list-wrap">
+          <h3>Entries</h3>
+          <ul id="entries-list" class="entries-list"></ul>
+        </div>
+      </section>
+
+      <section class="panel rewards-panel">
+        <h2>Rewards</h2>
+        <form id="item-form" class="item-form">
+          <label class="inline-field">
+            Item
+            <input id="item-name" name="item-name" type="text" placeholder="Ice cream" required>
+          </label>
+          <label class="inline-field">
+            Points
+            <input id="item-points" name="item-points" type="number" min="1" step="1" placeholder="20" required>
+          </label>
+          <label class="inline-field">
+            Image URL
+            <input id="item-image" name="item-image" type="url" placeholder="https://...">
+          </label>
+          <button type="submit">+</button>
+        </form>
+
+        <div class="cards-block">
+          <h3>Wish List</h3>
+          <div id="unlock-grid" class="cards-grid"></div>
+        </div>
+
+        <div class="cards-block">
+          <h3>Purchased Items</h3>
+          <div id="purchased-grid" class="cards-grid purchased-grid"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

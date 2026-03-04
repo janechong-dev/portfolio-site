@@ -3,7 +3,10 @@ import { formatProjectTitleWithBadges, letterProjects } from 'app/projects/data'
 import { baseUrl } from 'app/sitemap'
 
 export async function generateStaticParams() {
-  return letterProjects.map((project) => ({ slug: project.slug }))
+  const dedicatedRoutes = new Set(['content-studio', 'earn-it'])
+  return letterProjects
+    .filter((project) => !dedicatedRoutes.has(project.slug))
+    .map((project) => ({ slug: project.slug }))
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {

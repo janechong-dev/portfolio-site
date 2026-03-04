@@ -37,7 +37,7 @@ export const letterProjects: LetterProject[] = [
   },
   {
     letter: 'C',
-    slug: 'c',
+    slug: 'content-studio',
     title: 'Content Studio',
     status: 'live',
     highlights: ['customers'],
@@ -54,7 +54,7 @@ export const letterProjects: LetterProject[] = [
   },
   {
     letter: 'E',
-    slug: 'e',
+    slug: 'earn-it',
     title: 'Earn It',
     status: 'live',
     highlights: [],

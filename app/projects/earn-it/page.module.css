@@ -1,0 +1,25 @@
+.shell {
+  position: relative;
+  left: 50%;
+  width: calc(100vw - 1.5rem);
+  max-width: 1180px;
+  transform: translateX(-50%);
+  margin-top: 0.5rem;
+  border: 1px solid #d9dfeb;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.frame {
+  width: 100%;
+  height: calc(100vh - 120px);
+  border: none;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .frame {
+    height: calc(100vh - 104px);
+  }
+}
