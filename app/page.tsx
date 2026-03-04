@@ -35,7 +35,7 @@ export default function Page() {
 
       <div className="mb-8 space-y-1 text-neutral-700">
         <p>
-          Technical, yet business and design savvy{' '}
+          Technical, yet creative{' '}
           <Link
             href="/projects"
             className="font-semibold text-neutral-600 hover:text-neutral-900"
@@ -45,7 +45,7 @@ export default function Page() {
           </Link>
         </p>
         <p>
-          {'AI-native and curious '}
+          {'AI-native, and curious '}
           <Link
             href="/blog"
             className="font-semibold text-neutral-600 hover:text-neutral-900"
