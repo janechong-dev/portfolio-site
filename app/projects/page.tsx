@@ -12,7 +12,7 @@ export default function Page() {
       <p className="text-neutral-700 mb-5">
         Building 26 tools (A-Z) to solve everyday problems.
         <br />
-        3 hackathon wins 🏆 2 with active customers 👤 1 revenue-generating 💵
+        3 hackathon wins 🏆
       </p>
       <Projects />
     </section>
