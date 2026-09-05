@@ -3,196 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jane Chong — Impossible Bingo</title>
+<title>janechong.dev</title>
 <style>
-  :root{
-    --paper:#FAF6EF;
-    --ink:#1C1B19;
-    --clay:#B75B39;
-    --sage:#6E7F5C;
-    --gold:#C79A4B;
-    --line:rgba(28,27,25,0.16);
-  }
-  *{box-sizing:border-box;}
   body{
     margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:Georgia, 'Iowan Old Style', 'Times New Roman', serif;
-    line-height:1.55;
-  }
-  ::selection{background:var(--gold); color:var(--paper);}
-
-  .wrap{
-    max-width:640px;
-    margin:0 auto;
-    padding:0 28px;
-  }
-
-  header{
-    padding:80px 0 40px;
-  }
-  header .kicker{
-    font-family:Helvetica, Arial, sans-serif;
-    font-size:0.8rem;
-    letter-spacing:0.03em;
-    color:var(--sage);
-    margin:0 0 14px;
-  }
-  header h1{
-    font-size:clamp(2.2rem, 7vw, 3.2rem);
-    margin:0 0 18px;
-    font-weight:400;
-    line-height:1.08;
-  }
-  header p{
-    font-size:1.08rem;
-    max-width:46ch;
-    color:#3c3a35;
-    margin:0;
-  }
-
-  .progress-row{
-    display:flex;
-    align-items:baseline;
-    justify-content:space-between;
-    margin:0 0 20px;
-    font-family:Helvetica, Arial, sans-serif;
-  }
-  .progress-count{
-    font-size:0.9rem;
-    color:var(--sage);
-  }
-  .progress-bar{
-    height:3px;
-    background:var(--line);
-    margin-bottom:36px;
-    position:relative;
-  }
-  .progress-fill{
-    position:absolute;
-    left:0; top:0; bottom:0;
-    width:0%;
-    background:var(--clay);
-    transition:width .3s ease;
-  }
-
-  .bingo{
-    display:grid;
-    grid-template-columns:repeat(5, 1fr);
-    gap:8px;
-    margin-bottom:90px;
-  }
-  .cell{
-    aspect-ratio:1;
-    border:1px solid var(--line);
-    background:#fff;
+    height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
+    background:#FBF3E7;
+    color:#4A3B45;
+    font-family:Georgia, 'Times New Roman', serif;
     text-align:center;
-    padding:8px;
-    font-size:0.72rem;
-    line-height:1.25;
-    cursor:pointer;
-    transition:background .15s ease, color .15s ease;
-    font-family:Helvetica, Arial, sans-serif;
+    padding:24px;
   }
-  .cell.free{
-    background:var(--paper);
-    font-family:Georgia, serif;
-    font-style:italic;
+  .wrap{max-width:480px;}
+  h1{
+    font-size:clamp(1.4rem, 4vw, 1.9rem);
+    font-weight:400;
+    line-height:1.5;
+    margin:0 0 20px;
+  }
+  p{
+    font-family:Helvetica, Arial, sans-serif;
     font-size:0.95rem;
-    color:var(--sage);
-    cursor:default;
+    color:#7a6570;
+    margin:0;
   }
-  .cell.done{
-    background:var(--clay);
-    color:#fff;
-    border-color:var(--clay);
-  }
-  .cell:hover:not(.free):not(.done){
-    border-color:var(--clay);
-  }
-
-  footer{
-    font-family:Helvetica, Arial, sans-serif;
-    font-size:0.9rem;
-    color:#5a5a52;
-    padding-bottom:80px;
-  }
+  a{color:#D9622B; text-decoration:none;}
+  a:hover{text-decoration:underline;}
 </style>
 </head>
 <body>
-
-<div class="wrap">
-
-  <header>
-    <p class="kicker">jane chong</p>
-    <h1>Impossible bingo.</h1>
-    <p>Twenty-four ridiculous somedays. Click a square when you actually do the thing.</p>
-  </header>
-
-  <div class="progress-row">
-    <span class="progress-count" id="progressCount">0 / 24 done</span>
+  <div class="wrap">
+    <h1>idk what to use this domain for yet</h1>
+    <p>not looking for a job - unless i can work remote in hawaii. <a href="mailto:janechong.dev@gmail.com">say hi</a></p>
   </div>
-  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
-
-  <div class="bingo" id="bingoGrid">
-    <div class="cell">Learn to surf</div>
-    <div class="cell">Visit every continent</div>
-    <div class="cell">Publish something people read</div>
-    <div class="cell">Run a marathon</div>
-    <div class="cell">Ship a side project</div>
-    <div class="cell">Live abroad a year</div>
-    <div class="cell">Learn a new language</div>
-    <div class="cell">Host a dinner party</div>
-    <div class="cell">Try stand-up comedy</div>
-    <div class="cell">Sleep in a tent under stars</div>
-    <div class="cell">Learn an instrument</div>
-    <div class="cell free">FREE</div>
-    <div class="cell">Go a week off my phone</div>
-    <div class="cell">Get a tattoo I love</div>
-    <div class="cell">Take an art class</div>
-    <div class="cell">Watch a sunrise on a mountain</div>
-    <div class="cell">Write a letter, mail it</div>
-    <div class="cell">Learn to cook one dish perfectly</div>
-    <div class="cell">Go to a silent retreat</div>
-    <div class="cell">Build something with 1,000 users</div>
-    <div class="cell">Learn to say no more</div>
-    <div class="cell">Road trip, no itinerary</div>
-    <div class="cell">Volunteer somewhere real</div>
-    <div class="cell">Get comfortable being bad at something</div>
-    <div class="cell">Say yes to something scary</div>
-  </div>
-
-  <footer>
-    Not looking for work — just keeping score against myself.
-  </footer>
-
-</div>
-
-<script>
-  var cells = document.querySelectorAll('#bingoGrid .cell:not(.free)');
-  var count = document.getElementById('progressCount');
-  var fill = document.getElementById('progressFill');
-  var total = cells.length;
-
-  function update(){
-    var done = document.querySelectorAll('#bingoGrid .cell.done').length;
-    count.textContent = done + ' / ' + total + ' done';
-    fill.style.width = (done / total * 100) + '%';
-  }
-
-  cells.forEach(function(c){
-    c.addEventListener('click', function(){
-      c.classList.toggle('done');
-      update();
-    });
-  });
-
-  update();
-</script>
-
 </body>
 </html>
